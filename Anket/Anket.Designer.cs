@@ -63,18 +63,18 @@
             button1.Name = "button1";
             button1.Size = new Size(94, 29);
             button1.TabIndex = 1;
-            button1.Text = "button1";
+            button1.Text = "Load";
             button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
-            // Name
+            // name
             // 
             name.AutoSize = true;
             name.Location = new Point(12, 86);
-            name.Name = "Name";
+            name.Name = "name";
             name.Size = new Size(49, 20);
             name.TabIndex = 2;
             name.Text = "Name";
-            name.Click += ad_Click;
             // 
             // Name_Text
             // 
@@ -82,6 +82,7 @@
             Name_Text.Name = "Name_Text";
             Name_Text.Size = new Size(243, 27);
             Name_Text.TabIndex = 3;
+            Name_Text.TextChanged += Name_Text_TextChanged;
             // 
             // Surname_Text
             // 
@@ -89,6 +90,7 @@
             Surname_Text.Name = "Surname_Text";
             Surname_Text.Size = new Size(243, 27);
             Surname_Text.TabIndex = 4;
+            Surname_Text.TextChanged += Surname_Text_TextChanged;
             // 
             // Surname
             // 
@@ -114,6 +116,7 @@
             Father_Text.Name = "Father_Text";
             Father_Text.Size = new Size(243, 27);
             Father_Text.TabIndex = 7;
+            Father_Text.TextChanged += Father_Text_TextChanged;
             // 
             // Country
             // 
@@ -130,6 +133,7 @@
             Country_Text.Name = "Country_Text";
             Country_Text.Size = new Size(243, 27);
             Country_Text.TabIndex = 9;
+            Country_Text.TextChanged += Country_Text_TextChanged;
             // 
             // City
             // 
@@ -146,6 +150,7 @@
             City_Text.Name = "City_Text";
             City_Text.Size = new Size(243, 27);
             City_Text.TabIndex = 11;
+            City_Text.TextChanged += City_Text_TextChanged;
             // 
             // Phone
             // 
@@ -162,6 +167,7 @@
             Phone_Text.Name = "Phone_Text";
             Phone_Text.Size = new Size(243, 27);
             Phone_Text.TabIndex = 13;
+            Phone_Text.TextChanged += Phone_Text_TextChanged;
             // 
             // dateTimePicker1
             // 
@@ -169,6 +175,7 @@
             dateTimePicker1.Name = "dateTimePicker1";
             dateTimePicker1.Size = new Size(243, 27);
             dateTimePicker1.TabIndex = 14;
+            dateTimePicker1.ValueChanged += dateTimePicker1_ValueChanged;
             // 
             // Date
             // 
@@ -218,6 +225,7 @@
             Save.TabIndex = 19;
             Save.Text = "Save";
             Save.UseVisualStyleBackColor = true;
+            Save.Click += Save_Click;
             // 
             // Anket
             // 
@@ -246,6 +254,7 @@
             Controls.Add(textBox1);
             Name = "Anket";
             Text = "Anket";
+            Load += Anket_Load;
             ResumeLayout(false);
             PerformLayout();
         }
